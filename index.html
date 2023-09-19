@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Ivan Butov">
+    <meta name="description" content="This is my page with the first web labwork!">
+    <title>Lab_1 367118</title>
+    <link rel="shortcut icon" href="pictures/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body>
+<table class="page_table">
+    <tr>
+        <th>Бутов Иван Алексеевич</th>
+        <th>группа P3217</th>
+        <th>вариант 2708</th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>
+                    <img src="pictures/graphic.png"/>
+                    <div id="graphic"></div>
+                </li>
+                <li>
+                    <form action="form.php" method="post">
+                        <ul>
+                            <li>
+                                <label for="x_button">Изменение X</label>
+                                <button type="button" id="x_button" name="x_value">Mew</button>
+                            </li>
+                            <li>
+                                <label for="y_field">Изменение Y</label>
+                                <input type="text" id="y_field" name="y_value" placeholder="-3 . . . 3" maxlength="12" autofocus autocomplete="off">
+                            </li>
+                            <li>
+                                <label for="r_select">Изменение R</label>
+                                <select id="r_select" name="r_value">
+                                    <option selected>1</option>
+                                    <option>1.5</option>
+                                    <option>2</option>
+                                    <option>2.5</option>
+                                    <option>3</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button type="submit">Отправить</button>
+                            </li>
+                            <li>
+                                <button type="reset">Очистить</button>
+                            </li>
+                            <li>
+                                <label id="err_msg"></label>
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </td>
+
+        <td colspan="2">
+            <ul>
+                <li>
+                    <table id="results_table">
+                        <thead>
+                        <tr id="header">
+                            <th>Время получения</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>Результат</th>
+                            <th>Время проверки, мс</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <button type="button" id="clear_cookie">Очистить таблицу</button>
+                </li>
+            </ul>
+
+        </td>
+    </tr>
+</table>
+<script src="script.js"></script>
+</body>
+
+
+</html>
